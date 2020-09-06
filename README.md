@@ -9,4 +9,4 @@
 # 팀원 역할
 ## 박원영 : 개발자 / 빠샤
 ## 유건호 : 개발자 / 깔끔하고 접근하기 쉽도록
-## 조하정 : 디자이너 / Twenty years from now you will be more disappointed by the things you didn’t do than by the things you did. :)
+## 조하정 : 디자이너 / 할수있다!
