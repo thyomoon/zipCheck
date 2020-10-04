@@ -11,11 +11,14 @@ import UIKit
 class CustomTextfield: UITextField {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-//        self.layer.cornerRadius = 5.0
-//        self.layer.borderColor = UIColor.red.cgColor
-        self.layer.borderWidth = 1.5
-        self.backgroundColor = UIColor(red: 247, green: 247, blue: 247, alpha:1.0)
-//        self.tintColor = UIColor.white
+        self.backgroundColor = .none
+        self.borderStyle = .none
+        //        self.layer.cornerRadius = 5.0
+        //        self.layer.borderColor = UIColor.red.cgColor
+        //        self.layer.borderWidth = 1.5
+        //        self.backgroundColor = UIColor(red: 247, green: 247, blue: 247, alpha:1.0)
+        //        self.bottomLine = UIColor.white.cgColor
+        //        self.tintColor = UIColor.white
     }
     
     
