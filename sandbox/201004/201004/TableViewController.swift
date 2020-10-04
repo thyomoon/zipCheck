@@ -15,16 +15,8 @@ class TableViewController: UITableViewController {
         let year : Int
     }
     
-    let movie1 = Movie(title: "테넷", year: 2020)
-    let movie2 = Movie(title: "덩케르크", year: 2017)
-    let movie3 = Movie(title: "인터스텔라", year: 2014)
-    let movie4 = Movie(title: "다크나이트 라이즈", year: 2012)
-    let movie5 = Movie(title: "인셉션", year: 2010)
-    let movie6 = Movie(title: "다크나이트", year: 2008)
-    let movie7 = Movie(title: "프레스티지", year: 2006)
-    let movie8 = Movie(title: "배트맨 비긴즈", year: 2005)
-    let movie9 = Movie(title: "인썸니아", year: 2002)
-    let movie10 = Movie(title: "메멘토", year: 2000)
+    let movieList = [Movie(title: "테넷", year: 2020), Movie(title: "덩케르크", year: 2017), Movie(title: "인터스텔라", year: 2014), Movie(title: "다크나이트 라이즈", year: 2012), Movie(title: "인셉션", year: 2010), Movie(title: "다크나이트", year: 2008), Movie(title: "프레스티지", year: 2006), Movie(title: "배트맨 비긴즈", year: 2005), Movie(title: "인썸니아", year: 2002), Movie(title: "메멘토", year: 2000)]
+    
     
 
     override func viewDidLoad() {
@@ -41,14 +33,29 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return movieList.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell { let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
     // 개별 셀에 내용 채우기
     // 기본셀 : textLabel, detailTextLabel, imageView
-        cell.textLabel?.text = "\(indexPath.row)"
+        cell.textLabel?.text = "\(movieList[(indexPath.row)].title)"
+        cell.detailTextLabel?.text = "\(movieList[(indexPath.row)].year)"
         
-    return cell }
+    return cell
+        
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailVC = segue.destination as? DetailViewController {
+            if let cell = sender as? UITableViewCell, let indexPath = tableView.indexPath(for: cell) {
+                
+                let selectedTitle = movieList[indexPath.row].title
+                detailVC.selectedTitle = selectedTitle
+            }
+            
+        }
+    }
 
 }

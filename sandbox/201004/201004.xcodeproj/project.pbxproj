@@ -16,6 +16,7 @@
 		0B713D9525296118005D752B /* _01004Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B713D9425296118005D752B /* _01004Tests.swift */; };
 		0B713DA025296118005D752B /* _01004UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B713D9F25296118005D752B /* _01004UITests.swift */; };
 		0B713DAE25296357005D752B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B713DAD25296357005D752B /* TableViewController.swift */; };
+		2C371A5B2529738300808003 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C371A5A2529738300808003 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0B713D9F25296118005D752B /* _01004UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _01004UITests.swift; sourceTree = "<group>"; };
 		0B713DA125296118005D752B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B713DAD25296357005D752B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		2C371A5A2529738300808003 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				0B713D8625296117005D752B /* Assets.xcassets */,
 				0B713D8825296117005D752B /* LaunchScreen.storyboard */,
 				0B713D8B25296117005D752B /* Info.plist */,
+				2C371A5A2529738300808003 /* DetailViewController.swift */,
 			);
 			path = 201004;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				0B713D8225296117005D752B /* ViewController.swift in Sources */,
 				0B713D7E25296117005D752B /* AppDelegate.swift in Sources */,
+				2C371A5B2529738300808003 /* DetailViewController.swift in Sources */,
 				0B713D8025296117005D752B /* SceneDelegate.swift in Sources */,
 				0B713DAE25296357005D752B /* TableViewController.swift in Sources */,
 			);
